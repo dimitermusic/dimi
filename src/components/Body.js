@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 // import { FaInstagram } from 'react-icons/fa';
 import './Body.css'
 
+
 const Body = () => {
+
+    const [bodyText] = useState("Summer 2022")
+
     return (
         <div className='body'>
-            <h2>Summer 2022</h2>
+            <h2>{bodyText}</h2>
             {/* <a
                 target="_blank"
                 href="https://www.instagram.com/dimisongs/"
